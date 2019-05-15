@@ -15,6 +15,5 @@ spec:
       - image: arulkumar1967/pythondockerminikube:latest
         imagePullPolicy: IfNotPresent
         name: kubecont-helloworld
-        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
         ports:
         - containerPort: 5000 

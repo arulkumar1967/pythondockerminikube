@@ -4,7 +4,7 @@ TIMESTAMP=tmp-$(shell date +%s )
 
 create:
 	@eval $$(minikube docker-env) ;\
-	docker build -t $(REGISTRY)/$(REPO):$(TIMESTAMP) .
+	docker build -t $(REGISTRY)/$(REPO):latest .
 	kubectl create -f kubernetes/
 
 delete:
